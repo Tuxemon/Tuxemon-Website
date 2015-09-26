@@ -41,11 +41,6 @@
 	wget "https://pypi.python.org/packages/source/s/six/six-1.9.0.tar.gz#md5=476881ef4012262dfc8adc645ee786c4"<br>
 	tar xvfz six-1.9.0.tar.gz<br>
 	cp six-1.9.0/six.py Tuxemon/tuxemon/<br>
-	<br>
-	# Download the plugin architecture dependencies<br>
-	wget "https://pypi.python.org/packages/source/Y/Yapsy/Yapsy-1.11.123b.tar.gz#md5=7a8934158e9314c4f0f76606d082be8f"<br>
-	tar xvfz Yapsy-1.11.123b.tar.gz<br>
-	cp -r Yapsy-1.11.123/yapsy Tuxemon/tuxemon/
 	</code></p>
           <p class="lead">6. Build the OPK for your GCW-Zero:<br><code>mksquashfs Tuxemon/tuxemon tuxemon-unstable-latest.opk -all-root -noappend -no-exports -no-xattrs</code></p>
 
