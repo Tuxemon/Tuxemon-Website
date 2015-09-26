@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <% include ../partials/head %>
+
+  <body>
+
+    <% include ../partials/navbar %>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">GCW-Zero <span class="text-muted">Install.</span></h2>
+          <p class="lead"><b><h3>Binary</h3></b></p>
+          <p class="lead">You can download the nightly build of the Tuxemon OPK <a href="files/builds/tuxemon-unstable-latest.opk">here</a>.</p>
+          <p class="lead"><b><h3>Source</h3></b></p>
+          <p class="lead">Use the following steps to build Tuxemon on <b>Ubuntu</b> for the GCW-Zero from source:</p>
+          <p class="lead">1. Install git and squashfs tools with the following command: <br><code>sudo apt-get install git squashfs-tools</code></p>
+          <p class="lead">2. Clone the latest development version of Tuxemon with Git: <br><code>git clone -b development https://github.com/Tuxemon/Tuxemon.git</code></p>
+          <p class="lead">3. Modify the Tuxemon configuration file to set the resolution for the GCW-Zero: <br><code>sed -i 's/resolution_x.*/resolution_x = 320/g' Tuxemon/tuxemon/tuxemon.cfg<br>
+	sed -i 's/resolution_y.*/resolution_y = 240/g' Tuxemon/tuxemon/tuxemon.cfg<br>
+	sed -i 's/fullscreen.*/fullscreen = 1/g' Tuxemon/tuxemon/tuxemon.cfg</code></p>
+          <p class="lead">4. Copy the correctly sized icon file for the GCW-Zero to the correct location: <br><code>cp Tuxemon/tuxemon/resources/gfx/icon_32.png Tuxemon/tuxemon/resources/gfx/icon.png</code></p>
+          <p class="lead">5. Fetch all of Tuxemon's dependencies and copy them into the tuxemon directory: <br><code>
+	# Clone the latest version of PyTMX<br>
+	git clone https://github.com/bitcraft/PyTMX.git<br>
+	cp -r PyTMX/pytmx Tuxemon/tuxemon/<br>
+	<br>
+	# Download PyTMX's dependencies<br>
+	wget "https://pypi.python.org/packages/source/s/six/six-1.9.0.tar.gz#md5=476881ef4012262dfc8adc645ee786c4"<br>
+	tar xvfz six-1.9.0.tar.gz<br>
+	cp six-1.9.0/six.py Tuxemon/tuxemon/<br>
+	<br>
+	# Download the plugin architecture dependencies<br>
+	wget "https://pypi.python.org/packages/source/Y/Yapsy/Yapsy-1.11.123b.tar.gz#md5=7a8934158e9314c4f0f76606d082be8f"<br>
+	tar xvfz Yapsy-1.11.123b.tar.gz<br>
+	cp -r Yapsy-1.11.123/yapsy Tuxemon/tuxemon/
+	</code></p>
+          <p class="lead">6. Build the OPK for your GCW-Zero:<br><code>mksquashfs Tuxemon/tuxemon tuxemon-unstable-latest.opk -all-root -noappend -no-exports -no-xattrs</code></p>
+
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/gcwzero.png" alt="Linux Install">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+      <!-- /END THE FEATURETTES -->
+
+
+ </body>
+
+ <% include ../partials/footer %>
+ <% include ../partials/bootstrap_footer %>
+
+</html>
+

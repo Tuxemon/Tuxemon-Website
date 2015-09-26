@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <% include ../partials/head %>
+
+  <body>
+
+    <% include ../partials/navbar %>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Android <span class="text-muted">Install.</span></h2>
+          <p class="lead"><b><h3>Binary</h3></b></p>
+          <p class="lead">Use the following steps to run Tuxemon on <b>Android</b> using a prebuilt package:</p>
+          <p class="lead">1. Download the latest development version of Tuxemon for Android <a href='files/builds/tuxemon-unstable-latest.apk'>here</a>.</p>
+          <p class="lead">2. Ensure that you have enabled installation of apps from unknown sources.</p>
+          <p class="lead">3. Install the downloaded .apk file to your phone.</p>
+          <p class="lead"><b><h3>Source</h3></b></p>
+          <p class="lead">Use the following steps to build Tuxemon for <b>Android</b> from source. These steps were performed on <i>Ubuntu 14.04</i>. The steps for other platforms may differ:</p>
+          <p class="lead">1. Download and extract the latest development version of Tuxemon <a href='files/builds/tuxemon-unstable-latest.tgz'>here</a>.</p>
+          <p class="lead">2. Modify the <b>tuxemon/tuxemon/tuxemon.cfg</b> configuration file and set "<i>controller_overlay</i>" to "<i>1</i>".</p>
+          <p class="lead">3. Run the following commands to build Tuxemon for Android: <br><code>cd tuxemon<br>python ./build_android.py</code></p>
+
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/android.png" alt="Linux Install">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+      <!-- /END THE FEATURETTES -->
+
+
+ </body>
+
+ <% include ../partials/footer %>
+ <% include ../partials/bootstrap_footer %>
+
+</html>
+
