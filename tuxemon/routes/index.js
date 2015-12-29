@@ -30,6 +30,10 @@ router.get('/linux-install.html', function(req, res) {
   res.render('pages/linux-install', {title: 'Tuxemon | Linux Install', page_name: 'linux'});
 });
 
+router.get('/ubuntu-install.html', function(req, res) {
+  res.render('pages/ubuntu-install', {title: 'Tuxemon | Ubuntu Install', page_name: 'linux'});
+});
+
 router.get('/fedora-install.html', function(req, res) {
   res.render('pages/fedora-install', {title: 'Tuxemon | Fedora Install', page_name: 'linux'});
 });
