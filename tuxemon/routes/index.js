@@ -34,6 +34,9 @@ router.get('/fedora-install.html', function(req, res) {
   res.render('pages/fedora-install', {title: 'Tuxemon | Fedora Install', page_name: 'linux'});
 });
 
+router.get('/arch-install.html', function(req, res) {
+  res.render('pages/arch-install', {title: 'Tuxemon | Arch Linux Install', page_name: 'linux'});
+});
 
 router.get('/mac-install.html', function(req, res) {
   res.render('pages/mac-install', {title: 'Tuxemon | Mac OS X Install', page_name: 'mac'});
