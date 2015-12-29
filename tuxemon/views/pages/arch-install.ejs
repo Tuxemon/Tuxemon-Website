@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <% include ../partials/head %>
+
+  <body>
+
+    <% include ../partials/navbar %>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Arch Linux <span class="text-muted">Install.</span></h2>
+          <p class="lead">Use the following steps to run Tuxemon on <b>Arch Linux</b> from source:</p>
+          <p class="lead"><b><h3>Source</h3></b></p>
+          <p class="lead">1. Run the following commands to install Tuxemon's dependencies: <br>
+          <code>sudo pacman -S python2 python2-pygame python2-pip python2-imaging python2-netifaces git<br>
+sudo pip install pytmx<br>
+sudo pip install neteria
+          </code></p>
+          <p class="lead">2. Download the latest development version of Tuxemon <a href='files/builds/tuxemon-unstable-latest.tgz'>here</a> and extract the archive to a folder.</p>
+          <p class="lead">3. Run the game by running <code>python2 tuxemon.py</code> from a terminal.</p>
+
+          <p class="lead"><b><h3>AUR</h3></b></p>
+          <p class="lead">As of December 2015 the following instruction have been tested, thus considered valid. In case of any problem, please contact the maintainer(s) of the AUR package(s), as it isn't officially maintained by Tuxemon developers.<p>
+          <p class="lead">There isn't any AUR package to install stable version of Tuxemon. Use the following steps to install Tuxemon from GIT on Arch Linux using an AUR package, instead:</p>
+          <p class="lead">1. Install <a href='https://aur.archlinux.org/packages/tuxemon-git/'>tuxemon-git</a> with its dependencies with your AUR helper</p>
+          <p class="lead">2. Run the game by running <code>python2 /usr/share/tuxemon/main.py</code></p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="images/arch.png" alt="Arch Linux Install">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+      <!-- /END THE FEATURETTES -->
+
+ </body>
+
+ <% include ../partials/footer %>
+ <% include ../partials/bootstrap_footer %>
+
+</html>
+
