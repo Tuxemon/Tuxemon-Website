@@ -54,4 +54,8 @@ router.get('/gcwzero-install.html', function(req, res) {
   res.render('pages/gcwzero-install', {title: 'Tuxemon | GCW Zero Install', page_name: 'gcw'});
 });
 
+router.get('/donate.html', function(req, res) {
+  res.render('pages/donate', {title: 'Tuxemon | Donations', page_name: 'donate'});
+});
+
 module.exports = router;
