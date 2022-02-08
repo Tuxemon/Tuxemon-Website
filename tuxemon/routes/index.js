@@ -18,10 +18,6 @@ router.get('/download.html', function(req, res) {
   res.render('pages/download', {title: 'Tuxemon | Download', page_name: 'download'});
 });
 
-router.get('/music.html', function(req, res) {
-  res.render('pages/music', {title: 'Tuxemon | Music', page_name: 'music'});
-});
-
 router.get('/windows-install.html', function(req, res) {
   res.render('pages/windows-install', {title: 'Tuxemon | Windows Install', page_name: 'windows'});
 });
